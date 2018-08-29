@@ -6,6 +6,15 @@
   bottom: 0;
   left: 0;
   right: 0;
+  opacity: 0;
+  visibility: hidden;
+
+  &__inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
   &__description {
     text-align: center;
@@ -13,4 +22,20 @@
     font-weight: 300;
     line-height: 1.65;
   }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    transform: scaleX(1.2);
+    transform-origin: 100% 0;
+    color: $mainBlue;
+    cursor: pointer;
+
+    &:hover {
+      color: $mainOrange;
+    }
+  }
+
 }
