@@ -1,13 +1,21 @@
 .modal {
   position: fixed;
   z-index: 5;
-  background-color: rgba(255, 255, 255, .4);
+  background-color: rgba(255, 255, 255, .94);
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   opacity: 0;
   visibility: hidden;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
+
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
 
   &__inner {
     position: absolute;
