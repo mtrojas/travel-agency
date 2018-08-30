@@ -1180,8 +1180,8 @@ a{
               transform: translateX(0)
   }
       .site-header--dark .site-header__logo {
-        -webkit-transform: scale(.62);
-                transform: scale(.62);
+        -webkit-transform: scale(.57);
+                transform: scale(.57);
       }
   }
 
